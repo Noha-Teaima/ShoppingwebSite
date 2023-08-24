@@ -1,0 +1,90 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - project</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/project.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    </head>
+    <body>
+       <nav class="navbar navbar-dark bg-info ">
+  <div class="container-fluid">
+    <a class="navbar-brand success">SHOPPING CLOTHES OR SHOES</a>
+    <form class="d-flex" role="search">
+      <ul class="navbar-nav flex-grow-1">
+                        
+                        @if (Context.Session.GetInt32("UserId") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light btn btn-outline-secondary" asp-area="" asp-controller="User" asp-action="register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light btn btn-outline-secondary" asp-area="" asp-controller="User" asp-action="login">Login</a>
+                            </li>
+                        }@if (Context.Session.GetInt32("UserId") != null){
+                        @if (Context.Session.GetInt32("UserId") == 1)
+                        {
+                            <li class="nav-item">
+                                    <a  href="/Clothes/create" class="nav-link text-light button btn btn-outline-secondary" >Add New Clothes</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a  href="/Shoes/create" class="nav-link text-light button btn btn-outline-secondary" >Add New Shoes</a>
+                                </li>
+                        }
+                        <li class="nav-item">
+                                    <a class="nav-link text-light button btn btn-outline-secondary" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                                </li>
+                                  @*<li class="nav-item">
+                                    <a href="/UserClothes/Data" class="nav-link text-light button btn btn-outline-secondary" >Data You Selected</a>
+                                </li*@
+
+                                <li class="nav-item">
+                                    <a  href="/UserClothes/Data" class="nav-link text-light button btn btn-outline-secondary" >Clothes You Selected</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a  href="/UserShoes/Data" class="nav-link text-light button btn btn-outline-secondary" >Shoes You Selected</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a  href="/User/Home" class="nav-link text-light button btn btn-outline-secondary" >Clothes</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a  href="/UserShoes/Home2" class="nav-link text-light button btn btn-outline-secondary" >Shoes</a>
+                                </li>
+
+                            
+                               
+                        }
+
+                    </ul>
+     
+    </form>
+
+   
+  </div>
+</nav>
+<br />
+<br />
+ <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top  text-light  bg-info ">
+        <div class="container">
+            &copy; 2023 - project -NOHA TEAIMA
+        </div>
+    </footer>
+ <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+@RenderSection("scripts",required:false);
+    </body>
+</html>

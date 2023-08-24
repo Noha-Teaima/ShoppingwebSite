@@ -1,0 +1,132 @@
+﻿@using project.Controllers;
+@model List<Clothes>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@if (Context.Session.GetInt32("UserId") != null){
+
+    <div class="row row-cols-1 row-cols-md-2 g-4" >
+    
+
+     @foreach (var item in Model)
+    {
+         <div class="col">
+    <div class="card">
+      <img src="@item.img" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">@item.category</h5>
+        <h5>@item.price $</h5>
+        <p class="card-text">@item.description</p>
+         <a href="/UserClothes/Add/@item.id" class=" button btn btn-info text-light">Add To Card</a>
+                        @if (Context.Session.GetInt32("UserId") == 1)
+                        {
+        // <a href="/UserClothes/clearItem/@item.id" class=" button btn btn-info text-light">Delete this Card</a>
+                            
+                        }
+                    </div>
+    </div>
+  </div>
+    }
+  </div>
+
+}
+
+
+
+
+@if (Context.Session.GetInt32("UserId") == null)
+{
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators"  data-interval="1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/pexels-pnw-production-9218420.jpg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/pexels-mart-production-9558761.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/pexels-mikhail-nilov-8350500.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="/images/pexels-pnw-production-8575841 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/pexels-olya-kobruseva-8916600.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/pexels-pnw-production-8250050.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+
+
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators"  data-interval="1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/shoes/pexels-alexandra-maria-336372.jpg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/shoes/pexels-aman-jakhar-2048548.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/shoes/pexels-ankur-bagai-1280064.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="/images/shoes/pexels-bella-zhong-3782786.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/shoes/pexels-bella-zhong-3782789.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/shoes/pexels-flat-hito-904350.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+}
+
+
+
+
+  

@@ -1,0 +1,25 @@
+﻿@using project.viewModels
+@model LoginVM
+
+
+<form asp-action="login" asp-controller="User" method="post" class="container">
+
+        <span asp-validation-for="email"></span>
+        <label for="email" class="form-label"> Email</label>
+        <input asp-for="email" placeholder="Enter Email" class="form-control"/>
+
+       <span asp-validation-for="password"></span>
+        <label for="password" class="form-label"> Password</label>
+        <input asp-for="password" placeholder="Enter password" class="form-control"/>
+          @if(Model.message != ""){
+        <div class="text-danger">@Model.message</div>
+    }
+    <input type="submit" value="Register" />
+
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}

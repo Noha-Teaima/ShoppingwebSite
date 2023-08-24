@@ -1,0 +1,48 @@
+﻿@model User
+ @{
+     
+ }
+<h1> Registration</h1>
+
+ <form asp-action="register" asp-controller="User" method="post" class="container">
+        <span asp-validation-for="fname"></span>
+        <label for="fname" class="form-label"> fName</label>
+        <input asp-for="fname" placeholder=" Enter fName" class="form-control"/>
+
+  
+        <span asp-validation-for="lname" ></span>
+        <label for="lname" class="form-label"> lName</label>
+        <input asp-for="lname" placeholder=" Enter lName" class="form-control"/>
+
+        <span asp-validation-for="age" ></span>
+        <label for="age" class="form-label"> Age</label>
+        <input asp-for="age" placeholder="Enter age" class="form-control"/>
+
+        <span asp-validation-for="email"></span>
+        <label for="email" class="form-label"> Email</label>
+        <input asp-for="email" placeholder="Enter Email" class="form-control"/>
+
+        
+         <span asp-validation-for="phone" ></span>
+        <label for="phone" class="form-label"> Phone</label>
+        <input asp-for="phone" placeholder="Enter Phone" class="form-control"/>
+
+        <span asp-validation-for="password" ></span>
+        <label  for="password" class="form-label"> Password</label>
+        <input type="password" asp-for="password" placeholder="Enter Password" class="form-control"/>
+        
+        <span asp-validation-for="confirmedPassword" ></span>
+         <label for="confirmedPassword" class="form-label">Confirmed Password</label>
+        <input type="password" asp-for="confirmedPassword" placeholder="Confirmed Password" class="form-control"/>
+        
+
+        <button type="submit" class="btn btn-success" > Save</button>
+        <br />
+        <br />
+        <br />
+</form>
+   @section scripts{
+       <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+       <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+       <script src="/lib/jquery//dist/jquery.min.js"></script>
+   }

@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = project
+build_property.RootNamespace = project
+build_property.ProjectDir = F:\tasks for iti\MVC\project\project\project\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\tasks for iti\MVC\project\project\project
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Clothes/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvdGhlc1xjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Clothes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvdGhlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Shared/_myLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9teUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Shoes/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZXNcY3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/UserClothes/Data.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckNsb3RoZXNcRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/UserShoes/Data.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNob2VzXERhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/UserShoes/Home2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNob2VzXEhvbWUyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/User/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/User/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/User/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/tasks for iti/MVC/project/project/project/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t5518iznra

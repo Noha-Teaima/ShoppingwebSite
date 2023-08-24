@@ -1,0 +1,36 @@
+﻿@model Shoes
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-action="create" asp-controller="Shoes" method="post" class="container" enctype="multipart/form-data">
+
+  
+        <span asp-validation-for="description" ></span>
+        <label for="description" class="form-label"> Description</label>
+        <input asp-for="description" placeholder=" Enter Description" class="form-control"/>
+
+        <span asp-validation-for="price" ></span>
+        <label for="price" class="form-label"> Price</label>
+        <input asp-for="price" placeholder="Enter Price" class="form-control"/>
+
+        <span asp-validation-for="img"></span>
+        <label for="img" class="form-label"> Image</label>
+        <input type="file" asp-for="img" placeholder="Enter Image" class="form-control"/>
+
+        
+     
+        
+
+        <button type="submit" class="btn btn-success" > Save</button>
+        <br />
+        <br />
+
+</form>
+   @section scripts{
+       <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+       <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+       <script src="/lib/jquery//dist/jquery.min.js"></script>
+   }

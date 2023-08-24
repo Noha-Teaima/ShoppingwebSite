@@ -1,0 +1,61 @@
+﻿
+@model List<UserShoes>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    int total = 0;
+}
+
+
+@if (Context.Session.GetInt32("UserId") != null){
+
+    <div class="row row-cols-1 row-cols-md-2 g-4" >
+    
+        
+
+     @foreach (var item in Model)
+    {
+        
+      @if(item.shoes.id==item.shoesId){
+       @* @clothes=db.clothes.SingleOrDefault(a=>a.id==item.clothesId);*@
+            <div class="col">
+    <div class="card">
+      <img src="@item.shoes.img" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <h5>@item.shoes.price $</h5>
+        <p class="card-text">@item.shoes.description</p>
+<a href="/UserShoes/clearItem/@item.shoesId" class="button btn btn-outline-primary mt-20"> Delete </a>
+
+            @{
+                total= item.shoes.price +total;
+            } 
+                
+      </div>
+    </div>
+  </div>
+    }
+    }
+  </div>
+
+}
+
+
+
+@if (Context.Session.GetInt32("UserId") == null){
+
+    <h1>you don't add data</h1>
+}
+
+
+        <h3 class="border-warning text-success text-center text-lg-center mt-20">total price is @total $</h3>
+
+<a href="/UserShoes/clear" class="button btn btn-outline-primary "> Delete all data from My card</a>
+<a href="/UserShoes/clear" class="button btn btn-outline-primary "onclick="return confirm('Do You Want To Buy This Shoes ?')">Buy</a>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
